@@ -41,10 +41,11 @@ libs:
   - location: https://github.com/mongoose-os-libs/rpc-service-fs
   - location: https://github.com/mongoose-os-libs/rpc-uart
   - location: https://github.com/mongoose-os-libs/dash
-  - location: https://github.com/diy365-mgos/bthing-gpio
-  - location: https://github.com/diy365-mgos/bthing-shadow
-  - location: https://github.com/diy365-mgos/bthing-mqtt
   - location: https://github.com/diy365-mgos/bgps-gapi
+  # - location: https://github.com/diy365-mgos/bthing-gpio
+  # - location: https://github.com/diy365-mgos/bthing-shadow
+  # - location: https://github.com/diy365-mgos/bthing-mqtt
+
 
 conds:
   - when: mos.platform == "esp32"
