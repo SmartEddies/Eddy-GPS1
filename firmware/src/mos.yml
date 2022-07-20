@@ -14,7 +14,7 @@ config_schema:
   - ["wifi.ap.ssid", "EddyGPS1-??????"]
   - ["wifi.ap.pass", "Edd!es@h0me"]
 
-  - ["bthing.mqtt.topic_prefix", "$eddies"]
+  # - ["bthing.mqtt.topic_prefix", "$eddies"]
 
   - ["eddy", "o", {title: "Eddy's settings"}]
 
@@ -33,7 +33,7 @@ filesystem:
 
 libs:
   - location: https://github.com/mongoose-os-libs/boards
-  - location: https://github.com/mongoose-os-libs/provision
+  # - location: https://github.com/mongoose-os-libs/provision
   - location: https://github.com/mongoose-os-libs/wifi
   - location: https://github.com/mongoose-os-libs/rpc-common
   - location: https://github.com/mongoose-os-libs/rpc-service-config
