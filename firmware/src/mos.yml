@@ -2,7 +2,7 @@ author: DIY-365
 name: Eddy-GPS1
 description: Eddy-GPS1 firmware
 # arch: PLATFORM
-version: 1.2
+version: 1.0
 manifest_version: 2017-05-18
 libs_version: ${mos.version}
 modules_version: ${mos.version}
@@ -14,9 +14,10 @@ config_schema:
   - ["wifi.ap.ssid", "EddyGPS1-??????"]
   - ["wifi.ap.pass", "Edd!es@h0me"]
 
-  # - ["bthing.mqtt.topic_prefix", "$eddies"]
+  - ["bgps.gapi.update.enable", true]
+  - ["bgps.gapi.update.interval", 15000]
 
-  - ["eddy", "o", {title: "Eddy's settings"}]
+  - ["bthing.mqtt.topic_prefix", "$eddies"]
 
 tags:
   - c
@@ -33,7 +34,7 @@ filesystem:
 
 libs:
   - location: https://github.com/mongoose-os-libs/boards
-  # - location: https://github.com/mongoose-os-libs/provision
+  - location: https://github.com/mongoose-os-libs/provision
   - location: https://github.com/mongoose-os-libs/wifi
   - location: https://github.com/mongoose-os-libs/rpc-common
   - location: https://github.com/mongoose-os-libs/rpc-service-config
@@ -41,11 +42,11 @@ libs:
   - location: https://github.com/mongoose-os-libs/rpc-service-fs
   - location: https://github.com/mongoose-os-libs/rpc-uart
   - location: https://github.com/mongoose-os-libs/dash
+  - location: https://github.com/diy365-mgos/bgpssens
   - location: https://github.com/diy365-mgos/bgps-gapi
-  # - location: https://github.com/diy365-mgos/bthing-gpio
-  # - location: https://github.com/diy365-mgos/bthing-shadow
-  # - location: https://github.com/diy365-mgos/bthing-mqtt
-
+  - location: https://github.com/diy365-mgos/bthing-gpio
+  - location: https://github.com/diy365-mgos/bthing-shadow
+  - location: https://github.com/diy365-mgos/bthing-mqtt
 
 conds:
   - when: mos.platform == "esp32"
