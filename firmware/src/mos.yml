@@ -33,20 +33,19 @@ filesystem:
   - fs
 
 libs:
-  - location: https://github.com/mongoose-os-libs/boards
-  - location: https://github.com/mongoose-os-libs/provision
-  - location: https://github.com/mongoose-os-libs/wifi
-  - location: https://github.com/mongoose-os-libs/rpc-common
-  - location: https://github.com/mongoose-os-libs/rpc-service-config
-  - location: https://github.com/mongoose-os-libs/rpc-service-ota
-  - location: https://github.com/mongoose-os-libs/rpc-service-fs
-  - location: https://github.com/mongoose-os-libs/rpc-uart
-  - location: https://github.com/mongoose-os-libs/dash
-  - location: https://github.com/diy365-mgos/bgpssens
-  - location: https://github.com/diy365-mgos/bgps-gapi
-  - location: https://github.com/diy365-mgos/bthing-gpio
-  - location: https://github.com/diy365-mgos/bthing-shadow
-  - location: https://github.com/diy365-mgos/bthing-mqtt
+  - origin: https://github.com/mongoose-os-libs/boards
+  - origin: https://github.com/mongoose-os-libs/provision
+  - origin: https://github.com/mongoose-os-libs/wifi
+  - origin: https://github.com/mongoose-os-libs/rpc-common
+  - origin: https://github.com/mongoose-os-libs/rpc-service-config
+  - origin: https://github.com/mongoose-os-libs/rpc-service-ota
+  - origin: https://github.com/mongoose-os-libs/rpc-service-fs
+  - origin: https://github.com/mongoose-os-libs/rpc-uart
+  - origin: https://github.com/mongoose-os-libs/dash
+  - origin: https://github.com/diy365-mgos/bthing-shadow
+  - origin: https://github.com/diy365-mgos/bthing-mqtt
+  - origin: https://github.com/diy365-mgos/bgps-gapi
+  - origin: https://github.com/diy365-mgos/bgpssens
 
 conds:
   - when: mos.platform == "esp32"
